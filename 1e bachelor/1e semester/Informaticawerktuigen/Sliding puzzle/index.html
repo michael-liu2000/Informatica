@@ -7,6 +7,18 @@
         <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
     </head>
     <body>
-        <div id="puzzle_container"></div>
+        <div class="center">
+            <button class="center" onclick="new_game()">new game</button>
+            <div id="puzzle_container"></div>
+            <select id="sizeSelector" class="center" onchange="puzzle_size_handler(this.value)">
+                <option value="3">3 x 3</option>
+                <option value="4">4 x 4</option>
+                <option value="5">5 x 5</option>
+                <option value="6">6 x 6</option>
+            </select>
+            <label id="minutes">00</label>
+            <label id="colon">:</label>
+            <label id="seconds">00</label>
+        </div>
     </body>
 </html>
